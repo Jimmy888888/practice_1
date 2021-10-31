@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice ONE</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align:center;
+}
+
+p {
+  word-wrap: break-word;/*auto change line*/
+  font-family: cursive;
+  color: white;
+}
+
+/* Simple Responsive Framework. */
+.text_title{
+	background-color: black;
+    border: 2px solid blue;
+	font-size: 160%;
+	margin:0; 
+	text-align: center;
+	width: 25%;
+	height: 25%;
+	float: right;
+}
+
+.content{
+	margin: 10px;
+	width:90%;
+	clear: right;
+}
+
+.p_section {
+  width: 95%;
+  height: 180px;
+  border: 5px solid black;
+  background-color: #A52A2A;
+  margin: auto;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg{
+   float: left;
+   width: 33.3%;
+  } 
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 767px) and (max-width: 991px) {
+  .col-md ,.col-md-all-line{
+    float: left;
+  }
+  .col-md{
+    width: 50%;
+  }
+  .col-md-all-line{
+  	width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1>Practice ONE</h1>
+
+    <div class="col-lg col-md">
+        <div class="p_section">
+	  	    <p class = "text_title">Chicken</p>  
+	  	    <p class="content">Chicken can be prepared in a vast range of ways, including baking, grilling, barbecuing, frying, and boiling. Since the latter half of the 20th century, prepared chicken has become a staple of fast food. Chicken is sometimes cited as being more healthful than red meat, with lower concentrations of cholesterol and saturated fat.</p> 
+  	    </div>
+    </div>
+  <div class="col-lg col-md">
+  	<div class="p_section">
+  		<p class = "text_title">Chicken</p>  
+	  	    <p class="content">Chicken can be prepared in a vast range of ways, including baking, grilling, barbecuing, frying, and boiling. Since the latter half of the 20th century, prepared chicken has become a staple of fast food. Chicken is sometimes cited as being more healthful than red meat, with lower concentrations of cholesterol and saturated fat.</p>
+	  	</div>
+	 </div>
+  <div class="col-lg col-md-all-line">
+  	<div class="p_section">
+  		<p class = "text_title">Chicken</p>  
+	  	    <p class="content">Chicken can be prepared in a vast range of ways, including baking, grilling, barbecuing, frying, and boiling. Since the latter half of the 20th century, prepared chicken has become a staple of fast food. Chicken is sometimes cited as being more healthful than red meat, with lower concentrations of cholesterol and saturated fat.</p>
+     	</div>
+  	</div>
+
+</body>
+</html>
